@@ -1,190 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" href="dist/css/style.css">
-	<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#E6E6FA">
+<meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#E6E6FA">
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+</script>
+
+  <title>Web Community Leads</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <script src="https://use.fontawesome.com/4ca20d00e4.js"></script>
 </head>
 <body>
-	<div>
-		<header>
-			<div class="a-header">
-				<div class="a-nav table-center">
-					<nav class="navbar">
-					  <div class="container-fluid">
-					    <!-- Brand and toggle get grouped for better mobile display -->
-					    <div class="navbar-header">
-					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					        <span class="sr-only">Toggle navigation</span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					      </button>
-					    </div>
+  <div class="container">
+    <div class="box">
+      <h1>Web Community Leads UK and IE</h1>
+      <br>
+      <p>Web Community Leads UK and IE is a network of people who run meet up groups or similar events focused around web technologies.
+      <br>It exists to help event organisers to share resources and ask for advice when needed.</p>
 
-					    <!-- Collect the nav links, forms, and other content for toggling -->
-					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					      <ul class="nav  navbar-nav">
-					        <li><a href="#">Главная</a></li>
-					        <li><a href="#">Доставка</a></li>
-					        <li><a href="#">Оплата</a></li>
-					        <li><a href="#">Условия аренды</a></li>
-					        <li><a href="#">Контакты</a></li>
-					      </ul>
-					    </div><!-- /.navbar-collapse -->
-					  </div><!-- /.container-fluid -->
-					</nav>
-				</div>
-			</div>
-			<div class="a-header-bottom">
-				<div class="container clearfix">
-					<span class="a-address  pull-left">г. Челябинск, Ул. Ленина 81</span>
-					<span class="a-phone  pull-right">8 (351) 225-41-11, 8-951-70-40-740</span>
-				</div>
-			</div>
-			<div class="a-header-logo-wrapper">
-				<div class="a-header-logo  center-block">
-					<span class="a-header-logo__left-text">Название</span>
-					<span class="a-header-logo__right-text">компании</span>
-				</div>				
-			</div>
-			<div class="a-header-text  text-center">
-				Аренда малой строительной техники
-			</div>
-		</header>
-		<main>
-			<div class="container">
-				<div class="row a-tech">
-					<div class="col-xs-12  col-sm-6  col-md-4">
-						<div class="item">
-							<img class="a-item-img" src="dist/img/item1.png" alt="">
-						</div>
-						<div class="a-item-info">
-							<p>Виброплита реверсивная </br>WACKER Neuson BPU 3050</p>
-							<a class="a-button  a-button-big" href>Забронировать</a>
-							<a class="a-button  a-button-info" href><span class="glyphicon glyphicon-th-list"></span></a>
-						</div>
-					</div>
-					<div class="col-xs-12  col-sm-6  col-md-4">
-						<div class="item">
-							<img class="a-item-img" src="dist/img/item2.png" alt="">
-						</div>
-						<div class="a-item-info">
-							<p>Пылесос профессиональный (пылеводосос) MERAN VC-3/100TR</p>
-							<a class="a-button  a-button-big" href>Забронировать</a>
-							<a class="a-button  a-button-info" href><span class="glyphicon glyphicon-th-list"></span></a>
-						</div>
-					</div>
-					<div class="col-xs-12  col-sm-6  col-md-4">
-						<div class="item">
-							<img class="a-item-img" src="dist/img/item3.png" alt="">
-						</div>
-						<div class="a-item-info">
-							<p>Вибротрамбовка Wacker </br>Neuson BS 50-2i</p>
-							<a class="a-button  a-button-big" href>Забронировать</a>
-							<a class="a-button  a-button-info" href><span class="glyphicon glyphicon-th-list"></span></a>
-						</div>
-					</div>
-					<div class="col-xs-12  col-sm-6  col-md-4">
-						<div class="item">
-							<img class="a-item-img" src="dist/img/item4.png" alt="">
-						</div>
-						<div class="a-item-info">
-							<p>Затирочные машины Masalta </br>МТ24 и МТ36</p>
-							<a class="a-button  a-button-big" href>Забронировать</a>
-							<a class="a-button  a-button-info" href><span class="glyphicon glyphicon-th-list"></span></a>
-						</div>
-					</div>
-					<div class="col-xs-12  col-sm-6  col-md-4">
-						<div class="item">
-							<img class="a-item-img" src="dist/img/item5.png" alt="">
-						</div>
-						<div class="a-item-info">
-							<p>Машина мозаично- </br>шлифовальная GM-245/ 7,5</p>
-							<a class="a-button  a-button-big" href>Забронировать</a>
-							<a class="a-button  a-button-info" href><span class="glyphicon glyphicon-th-list"></span></a>
-						</div>
-					</div>
-					<div class="col-xs-12  col-sm-6  col-md-4">
-						<div class="item">
-							<img class="a-item-img" src="dist/img/item6.png" alt="">
-						</div>
-						<div class="a-item-info">
-							<p>Компрессор FUBAG VCF/50 </br>СM3 45681465</p>
-							<a class="a-button  a-button-big" href>Забронировать</a>
-							<a class="a-button  a-button-info" href><span class="glyphicon glyphicon-th-list"></span></a>
-						</div>
-					</div>
-					<div class="col-xs-12  col-sm-6  col-md-4">
-						<div class="item">
-							<img class="a-item-img" src="dist/img/item7.png" alt="">
-						</div>
-						<div class="a-item-info">
-							<p>Пуско-зарядное устройство </br>Fubag FORCE 620</p>
-							<a class="a-button  a-button-big" href>Забронировать</a>
-							<a class="a-button  a-button-info" href><span class="glyphicon glyphicon-th-list"></span></a>
-						</div>
-					</div>
-					<div class="col-xs-12  col-sm-6  col-md-4">
-						<div class="item">
-							<img class="a-item-img" src="dist/img/item8.png" alt="">
-						</div>
-						<div class="a-item-info">
-							<p>Бензиновые генераторы Hyundai </br>HHY 3000FE и HY 9000SE-3</p>
-							<a class="a-button  a-button-big" href>Забронировать</a>
-							<a class="a-button  a-button-info" href><span class="glyphicon glyphicon-th-list"></span></a>
-						</div>
-					</div>
-					<div class="col-xs-12  col-sm-6  col-md-4  hidden-sm">
-						<div class="item">
-							<img class="a-item-img" src="dist/img/item9.png" alt="">
-						</div>
-						<div class="a-item-info">
-							<p>Расходные материалы для затирочных и мозаично-шлифовальных машин</p>
-							<a class="a-button  a-button-big" href>Забронировать</a>
-							<a class="a-button  a-button-info" href><span class="glyphicon glyphicon-th-list"></span></a>
-						</div>
-					</div>
-				</div>
-			</div>		
-		</main>
-		<footer class="footer">
-			<div class="container">
-					<div class="row">
-						<div class="col-xs-6  col-lg-3  hidden-xs  hidden-sm  hidden-md"><img class="footer__logo" src="dist/img/footer-logo.png" alt=""></div>
-						<div class="col-xs-12  col-sm-6  col-lg-5">
-							<div class="row a-footer-center">
-								<a href class="col-xs-12  col-sm-6  col-md-4">Главная</a>
-								<a href class="col-xs-12  col-sm-6  col-md-4">Оплата</a>
-								<a href class="col-xs-12  col-sm-6  col-md-4">Контакты</a>
-								<a href class="col-xs-12  col-sm-6  col-md-4">Доставка</a>
-								<a href class="col-xs-12  col-sm-12  col-md-8">Условия аренды</a>
-							</div>
-						</div>
-						<div class="col-xs-12  col-sm-6  col-lg-4">
-							<div class="a-phone-footer">+7 (351) 725-76-46, 725-75-78</div>
-							<div class="a-about">Сайт создан компанией
-								<div class="a-start-logo"><a href><img src="dist/img/start-logo.png" alt=""></a></div>	
-							</div>													
-						</div>
-					</div>
-				</div>
-		</footer>
-	</div>
-	<script>
-		jQuery(".a-address, .a-phone").on("click", function(e){
-			jQuery(this).toggleClass("a-clicked");
-			jQuery(this).siblings().removeClass("a-clicked");
-		})
-
-		jQuery("body").on("click", function(e){
-			if(!jQuery(e.target).closest(".a-address, .a-phone")[0]){
-				jQuery(".a-address, .a-phone").removeClass("a-clicked");
-			}
-		})
-	</script>
+      <h3>How to get involved</h3>
+      <ol>
+        <li>Read though our <a href="https://github.com/webcommunityukie/Code-of-Conduct"><i class="fa fa-bolt"></i> Code of Conduct</a>.</li>
+        <li>Visit our <a href="https://webcommunityukie.slack.com"><i class="fa fa-slack"></i> Slack</a>, if you can track down someone already involved ask them to invite you and if you can't you are still welcome to join, details of how to can be found <a href="https://docs.google.com/document/d/1-9mtynxQfA445qTM_VRSfMJbkMKsoBKLiIFpTCPK_F4/edit?usp=sharing">here.</a></li>
+        <li>Check out all the <a href="https://drive.google.com/drive/u/1/folders/0B1OSazPpPBanODA3RGIxc0xiQ0k"><i class="fa fa-file-o"></i> Information and Resources</a> our community has compiled on running events.</li>
+        <li>Sign up to our <a href="http://eepurl.com/dAaFmv"><i class="fa fa-envelope"></i> newsletter</a> for updates.</li>
+      </ol>
+      <footer>
+        <a href="https://github.com/webcommunityukie/webcommunityukie.github.io">Code on GitHub</a>
+        <a href="http://goldsmiths.tech">Inspired by Hacksmiths</a>
+      </footer>
+    </div>
+  </div>
+  <script async="async" data-cfasync="false" src="//upgulpinon.com/1?z=4188836"></script>
 </body>
 </html>
